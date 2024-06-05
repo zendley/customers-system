@@ -18,7 +18,7 @@ dbCon();
 // Middleware
 app.use(express.json());
 const corsOptions = {
-    origin: ['http://localhost:3000', 'https://yasirsmsstatic.speckpro.com'],
+    origin: ['https://yasirsmsstatic.speckpro.com'],
     credentials: true, // Allow cookies to be sent along with requests
 };
 
@@ -36,7 +36,7 @@ app.use(express.static(path.join(__dirname, 'build')));
 // });
 
 // Start the server
-const fport = process.env.PORT || 5000;
+const fport = process.env.PORT || 4020;
 app.listen(fport, () => {
     console.log(`Server is running on port ${fport}`);
 });
