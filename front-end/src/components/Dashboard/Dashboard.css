@@ -1,0 +1,81 @@
+/* CSS for the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+.custom-table {
+  width: 100%;
+  border-collapse:separate;
+  border-spacing:0 15px;
+}
+th
+{
+  border-spacing:0px !important;
+  font-weight: bolder;
+  font-size: 20px;
+}
+td {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd; /* Add border to the bottom of each cell */
+  text-align: left;
+  font-weight: bold;
+}
+
+th {
+  background: linear-gradient( rgba(142,34,195,1) 0%, rgba(109,5,255,1) 100%);
+  color: #ffffff;
+  padding: 8px;
+}
+tr
+{
+  border-radius: 5px !important;
+}
+
+/* Set background color for odd and even rows */
+tr:nth-child(even) {
+  background-color: rgb(0,0,0,0.5);
+  padding: 8px;
+
+}
+
+tr:nth-child(odd) {
+background-color: transparent;
+  padding: 8px;
+
+}
+
+/* CSS for buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* CSS for pagination */
+.pagination {
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #008CBA;
+}
+
+.pagination button:hover {
+  background-color: #0073aa;
+}
+
+.pagination span {
+  margin: 0 10px;
+}
+
+
